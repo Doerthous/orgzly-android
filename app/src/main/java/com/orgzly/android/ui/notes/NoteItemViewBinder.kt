@@ -103,10 +103,10 @@ class NoteItemViewBinder(private val context: Context, private val inBook: Boole
     }
 
     private fun setupTitle(holder: NoteItemViewHolder, noteView: NoteView) {
-        val level = if (inBook) noteView.note.position.level else 0
-
-        if (AppPreferences.isRemoveNoteIndent(context)) {
-            holder.binding.itemHeadTitle.setText("--".repeat(level)+"  "+generateTitle(noteView))
+        if (inBook && AppPreferences.isRemoveNoteIndent(context)) {
+                holder.binding.itemHeadTitle.setText(
+                    "--".repeat(noteView.note.position.level) + "  " + generateTitle(noteView)
+                )
         }
         else {
             holder.binding.itemHeadTitle.setText(generateTitle(noteView))
