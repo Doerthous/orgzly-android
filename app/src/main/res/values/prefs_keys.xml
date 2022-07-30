@@ -423,6 +423,9 @@
     <string name="pref_key_set_last_repeat_on_time_shift" translatable="false">pref_key_set_last_repeat_on_time_shift</string>
     <bool name="pref_default_set_last_repeat_on_time_shift" translatable="false">true</bool>
 
+    <string name="pref_key_auto_insert_org_id" translatable="false">pref_key_auto_insert_org_id</string>
+    <bool name="pref_default_auto_insert_org_id" translatable="false">false</bool>
+
     <string name="pref_key_breadcrumbs_target" translatable="false">pref_key_breadcrumbs_target</string>
     <string name="pref_default_breadcrumbs_target" translatable="false">note_details</string>
 

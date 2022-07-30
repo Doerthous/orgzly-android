@@ -488,6 +488,8 @@
     <string name="log_on_time_shift_summary">当有重复器的笔记被标记为完成时记录时间</string>
     <string name="set_last_repeat_on_time_shift">在时间改变时设定属性</string>
     <string name="set_last_repeat_on_time_shift_summary">当有重复器的笔记被标记为完成时设定时间</string>
+    <string name="auto_insert_org_id">自动插入Org ID</string>
+    <string name="auto_insert_org_id_summary">当创建笔记时自动插入Org ID</string>
     <string name="background_opacity">背景不透明度</string>
     <string name="update_frequency">更新频率</string>
     <string name="git">Git</string>

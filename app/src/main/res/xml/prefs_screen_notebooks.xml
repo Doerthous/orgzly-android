@@ -171,6 +171,12 @@
             android:summary="@string/set_last_repeat_on_time_shift_summary"
             android:defaultValue="@bool/pref_default_set_last_repeat_on_time_shift"/>
 
+        <SwitchPreference
+            android:key="@string/pref_key_auto_insert_org_id"
+            android:title="@string/auto_insert_org_id"
+            android:summary="@string/auto_insert_org_id_summary"
+            android:defaultValue="@bool/pref_default_auto_insert_org_id"/>
+
         <ListPreference
             android:key="@string/pref_key_breadcrumbs_target"
             android:title="@string/breadcrumbs_target"

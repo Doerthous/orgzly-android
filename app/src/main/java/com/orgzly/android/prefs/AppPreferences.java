@@ -609,6 +609,21 @@ public class AppPreferences {
     }
 
     /*
+     * Auto insert Org ID property on note create
+     */
+
+    public static boolean autoInsertOrgId(Context context) {
+        return getDefaultSharedPreferences(context).getBoolean(
+                context.getResources().getString(R.string.pref_key_auto_insert_org_id),
+                context.getResources().getBoolean(R.bool.pref_default_auto_insert_org_id));
+    }
+
+    public static void autoInsertOrgId(Context context, boolean value) {
+        String key = context.getResources().getString(R.string.pref_key_auto_insert_org_id);
+        getDefaultSharedPreferences(context).edit().putBoolean(key, value).apply();
+    }
+
+    /*
      * Open note or book on link/breadcrumbs follow.
      */
 
