@@ -1292,7 +1292,7 @@ class DataRepository @Inject constructor(
     fun createNote(notePayload: NotePayload, target: NotePlace): Note {
         val createdAt = System.currentTimeMillis()
 
-        val payload = if (AppPreferences.createdAt(context)) {
+        var payload = if (AppPreferences.createdAt(context)) {
             // Set created-at property
 
             val propName = AppPreferences.createdAtProperty(context)
@@ -1306,6 +1306,10 @@ class DataRepository @Inject constructor(
 
         } else {
             notePayload
+        }
+
+        if (AppPreferences.autoInsertOrgId(context)) {
+            payload.properties.put("ID", UUID.randomUUID().toString());
         }
 
         return db.runInTransaction(Callable {

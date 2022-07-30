@@ -603,6 +603,8 @@
     <string name="log_on_time_shift_summary">Log time when note with repeater is marked as done</string>
     <string name="set_last_repeat_on_time_shift">Set property on time shift</string>
     <string name="set_last_repeat_on_time_shift_summary">Set time when note with repeater is marked as done</string>
+    <string name="auto_insert_org_id">Auto insert org id</string>
+    <string name="auto_insert_org_id_summary">Auto insert org id when creating note</string>
     <string name="background_opacity">Background opacity</string>
     <string name="update_frequency">Update frequency</string>
     <string name="git">Git</string>
